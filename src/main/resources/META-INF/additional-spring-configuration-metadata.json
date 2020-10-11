@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.api.version",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.api.version'"
+  },
+  {
+    "name": "spring.jpa.format_sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.format_sql'"
+  }
+]}

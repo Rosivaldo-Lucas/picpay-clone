@@ -2,12 +2,17 @@ package com.rosivaldo.picpayclone.models;
 
 import java.time.OffsetDateTime;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-
 @MappedSuperclass
 public class ModeloBase {
   
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  
   private OffsetDateTime createdAt;
   private OffsetDateTime updatedAt;
 
