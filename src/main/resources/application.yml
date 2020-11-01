@@ -1,7 +1,8 @@
 spring:
   application:
     name: picpay-clone
-  
+
+  # POSTGRESQL  
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/picpayclone
@@ -12,7 +13,7 @@ spring:
   api:
     version: 1.0.0
   
-  #JPA PROPERTIES
+  # JPA PROPERTIES
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,8 +21,27 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     format_sql: true
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
 
 picpayclone:
+  # JWT
   jwt:
     expiration: 86400000
     secret-key: b2662032b6cbea6d6993fae9ecf548bb
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: '*'
+
+info:
+  app:
+    name: '@project.name@'
+    version: '@project.version@'

@@ -96,6 +96,18 @@
 			<version>0.9.1</version>
 		</dependency>
 
+		<!-- SPRING DATA REDIS -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- SPRING ACTUATOR -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 		<!-- JUNIT -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

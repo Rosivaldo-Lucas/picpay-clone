@@ -2,6 +2,7 @@ package com.rosivaldo.picpayclone.services.impl;
 
 import com.rosivaldo.picpayclone.config.MensagemValidacao;
 import com.rosivaldo.picpayclone.models.Usuario;
+import com.rosivaldo.picpayclone.services.IUsuarioService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class AutenticacaoService implements UserDetailsService {
 
   @Autowired
-  private UsuarioService usuarioService;
+  private IUsuarioService usuarioService;
 
   // USUARIO QUE QUER LOGAR NO SISTEMA
   @Override
