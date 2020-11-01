@@ -1,8 +1,8 @@
-# picpay-clone
+# PicPay Clone
 
 # API que simula o funcionamento do PicPay feita com Spring Boot e Java.
 
-# Tecnologias utilizadas:
+# Tecnologias utilizadas
   - Spring Boot 2
   - Spring Security e JWT
   - Spring Data JPA com PostgreSQL
